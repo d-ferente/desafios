@@ -1,0 +1,12 @@
+alert("Calcule a idade de 2 pessoas em um determinado ano em que ambas já estejam vivas")
+p1 = prompt("Qual o ano de nascimento da primeira pessoa?")
+p2 = prompt("Qual o ano de nascimento da segunda pessoa?")
+aa = prompt("Qual o ano de referencia?")
+if (aa > p1){
+    if (aa > p2){
+        i1 = aa - p1
+        i2 = aa - p2
+        alert("A primeira pessoa tem "+i1+" anos e a segunda tem "+i2+" anos.")
+    }
+}
+else 
