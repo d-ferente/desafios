@@ -1,0 +1,3 @@
+nome = prompt("Qual seu nome?")
+alert("Que nome bosta o.0 ")
+
