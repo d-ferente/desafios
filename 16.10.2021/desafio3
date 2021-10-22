@@ -1,4 +1,4 @@
-alert("Calcule a idade de 2 pessoas em um determinado ano em que ambas já estejam vivas")
+alert("Calcule a idade de 2 pessoas em relação a um ano específico.")
 p1 = prompt("Qual o ano de nascimento da primeira pessoa?")
 p2 = prompt("Qual o ano de nascimento da segunda pessoa?")
 aa = prompt("Qual o ano de referencia?")
@@ -8,6 +8,18 @@ if (aa > p1){
         i2 = aa - p2
         alert("A primeira pessoa tem "+i1+" anos e a segunda tem "+i2+" anos.")
     }
+    else
+        i1 = aa - p1
+        i2 = p2 - aa
+        alert("A primeira pessoa tem "+i1+" anos, e faltam"+i2+" anos para a segunda pessoa nascer.")
 }
 else 
-    alert("Insira anos válidos para os cálculos")
+    if (aa > p2){
+        i1 = p1 - aa
+        i2 = aa - p2
+        alert("Faltam"+i1+" anos para a primeira pessoa nascer e a segunda tem "+i2+" anos.")
+    }
+    else
+        i1 = p1 - aa
+        i2 = p2 - aa
+        alert("Faltam"+i1+" anos para a primeira pessoa nascer e faltam"+i2+" anos para a segunda pessoa nascer.")
