@@ -1,0 +1,41 @@
+Faça um programa que primeiro pergunte pro usuário Quantas notas compõe a média final, e a seguir pergunte quantos alunos há na classe. A seguir, o programa deve perguntar as notas de cada aluno. Ao final, mostrar na console a média de cada aluno e a média da turma.
+
+pergunte quantas notas tem ->quantasnotas=num
+pergunte quantos alunos tem ->tantosalunos=num
+array qual a nota do aluno x ->
+
+//alert("Quantos alunos existem na turma?")
+
+
+quantasnotas = prompt("Quantas Notas cada aluno tem?")
+quantosalunos = prompt("Quantos alunos existem na turma?")
+listaalunos = []
+while (listaalunos.length < quantosalunos) {
+  listanotas = []
+  while (listanotas.lenght < quantasnotas) {
+    nota = prompt("Digite a nota")
+    listanotas.push(nota)
+  }
+  listaalunos.push(listanotas)
+}
+return listaalunos
+
+
+quantasnotas = prompt("Quantas Notas cada aluno tem?")
+quantosalunos = prompt("Quantos alunos existem na turma?")
+listaalunos = []
+while (listaalunos.length < quantosalunos) {
+  var aluno = prompt("Digite o nome do aluno:")
+  listaalunos.push(aluno)
+
+}
+console.log(listaalunos)
+listanotas = 0
+while (listaalunos.lenght < quantosalunos){
+    for (i = 0; i < quantasnotas; i++){
+        listanotas = prompt(listanotas+"digite a nota do aluno")
+    }
+    media = listanotas/quantasnotas
+    listaalunos.push(media)
+}
+console.log(listaalunos)
